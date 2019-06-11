@@ -1,0 +1,19 @@
+{
+  "name": "image-optimize",
+  "version": "0.0.1",
+  "description": "optimize all images in folder (resize it)",
+  "main": "index.js",
+  "dependencies": {
+    "sharp": "^0.22.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "images",
+    "optimize"
+  ],
+  "author": "Abanob Mossad",
+  "license": "MIT"
+}
