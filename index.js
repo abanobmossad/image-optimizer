@@ -3,12 +3,11 @@ const fs = require("fs");
 const path = require("path");
 
 const folderPath = process.argv[2];
-console.log(process.argv);
 
 if (!folderPath) throw new Error("Folder path required ");
 
-const size = process.argv[3] || 800;
-if (!process.argv[4]) console.log("Useing default size ", size);
+const size = parseInt(process.argv[3], 10) || 800;
+if (!process.argv[4]) console.log("Useing size ", size);
 
 console.log("----------Optimizing Start----------");
 const optimize = (err, images) => {
@@ -29,10 +28,10 @@ const optimize = (err, images) => {
 					.toBuffer()
 					.then(buffer => {
 						fs.writeFile(imagePath, buffer, err => {
-							if (!err) console.log(`${img} => done`);
+							if (!err) console.log(`${img}  ✔`);
 							else {
 								console.log(
-									"Error on saving new image",
+									"Error on saving new image ❌",
 									err
 								);
 							}
