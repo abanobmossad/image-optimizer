@@ -5,7 +5,7 @@ optimize all images in folder with single run
 ### Usage 
 
 ```sh
-$ sudo node index.js "full folder path" "new size"
+$ sudo node index.js "path/to/images/folder" "new size"
 ```
 
 > Default size is `800`
